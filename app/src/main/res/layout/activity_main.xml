@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations Personnelles"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom Complet" android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saisissez votre nom"
+            android:inputType="textPersonName"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Courriel" android:textStyle="bold" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/et_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="exemple@domaine.com"
+            android:inputType="textEmailAddress"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numéro de Téléphone" android:textStyle="bold" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+212 6..."
+            android:inputType="phone"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse Résidentielle" android:textStyle="bold" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/et_home_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="N°, Rue, Quartier"
+            android:inputType="textPostalAddress"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ville d'origine" android:textStyle="bold" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Casablanca"
+            android:inputType="textCapWords"/>
+
+        <Button
+            android:id="@+id/btn_send_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soumettre le formulaire"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
